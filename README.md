@@ -6,3 +6,5 @@ REST service and Powershell based cli for configurationg an OIDC authority servi
 ### See
 
 [Tools used](https://github.com/Aha43/AuthorityConfig/wiki/Tools)
+
+[TODO board](https://github.com/Aha43/AuthorityConfig/projects/1)
