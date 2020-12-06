@@ -23,7 +23,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "05 Testing", "05 Testing", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AuthorityConfig.Infrastructure.AuthorityRepository.Sql.IntegrationTest", "AuthorityConfig.Infrastructure.AuthorityRepository.Sql.IntegrationTest\AuthorityConfig.Infrastructure.AuthorityRepository.Sql.IntegrationTest.csproj", "{0237FB3C-CDF9-4AD5-BF74-CB9E8848E417}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuthorityConfig.Tool.AuthYamlToJson", "AuthorityConfig.Tool.AuthYamlToJson\AuthorityConfig.Tool.AuthYamlToJson.csproj", "{AA3AEBB3-0376-4D01-8560-5A3A76912215}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AuthorityConfig.Tool.AuthYamlToJson", "AuthorityConfig.Tool.AuthYamlToJson\AuthorityConfig.Tool.AuthYamlToJson.csproj", "{AA3AEBB3-0376-4D01-8560-5A3A76912215}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "06 Tools", "06 Tools", "{48C58559-B70C-405B-B4A4-8D01D1C31992}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -117,6 +119,7 @@ Global
 		{BAD6085C-0424-4840-912B-7E1D9211D2AA} = {4770659C-66B8-4D8F-805C-02A08393F33B}
 		{25A3379A-215B-4A6B-AC35-8B77118A4F7B} = {E69BAA85-6DC4-4209-80B4-91D17708CD11}
 		{0237FB3C-CDF9-4AD5-BF74-CB9E8848E417} = {F65DBDC2-2AFD-4BCC-AB25-8FB8D09FAB45}
+		{AA3AEBB3-0376-4D01-8560-5A3A76912215} = {48C58559-B70C-405B-B4A4-8D01D1C31992}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D8CE23BD-1904-4E79-BD79-B200D98C433A}
