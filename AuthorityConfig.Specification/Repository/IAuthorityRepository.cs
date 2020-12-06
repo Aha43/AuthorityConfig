@@ -1,4 +1,4 @@
-﻿using AuthorityConfig.Domain.Model;
+﻿using AuthorityConfig.Specification.Repository.Dao;
 using System.Threading;
 using System.Threading.Tasks;
 
@@ -6,7 +6,7 @@ namespace AuthorityConfig.Specification.Repository
 {
     public interface IAuthorityRepository
     {
-        Task<IdserverConfig> GetConfigurationAsync(string authority, CancellationToken cancellationToken);
-        Task SetConfigurationAsync(string authority, IdserverConfig config, CancellationToken cancellationToken);
+        Task<AuthorityDao> GetConfigurationAsync(string authority, CancellationToken cancellationToken);
+        Task SetConfigurationAsync(AuthorityDao config, CancellationToken cancellationToken);
     }
 }
