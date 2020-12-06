@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "AuthorityConfig.Tool.AuthYamlToJson": {
+      "commandName": "Project",
+      "commandLineArgs": "D:\\published\\No.Front.Dips.Auth.AuthenticationServer\\arnepc.dips.local-felles.identityserver\\idserver.config.yaml"
+    }
+  }
+}
