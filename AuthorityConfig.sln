@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuthorityConfig", "Authorit
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuthorityConfig.Domain", "AuthorityConfig.Domain\AuthorityConfig.Domain.csproj", "{2EC24076-83D1-42A2-8B8B-25509B1BC3C6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuthorityConfig.Specification", "AuthorityConfig.Specification\AuthorityConfig.Specification.csproj", "{BAD6085C-0424-4840-912B-7E1D9211D2AA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -44,5 +46,17 @@ Global
 		{2EC24076-83D1-42A2-8B8B-25509B1BC3C6}.Release|x64.Build.0 = Release|Any CPU
 		{2EC24076-83D1-42A2-8B8B-25509B1BC3C6}.Release|x86.ActiveCfg = Release|Any CPU
 		{2EC24076-83D1-42A2-8B8B-25509B1BC3C6}.Release|x86.Build.0 = Release|Any CPU
+		{BAD6085C-0424-4840-912B-7E1D9211D2AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BAD6085C-0424-4840-912B-7E1D9211D2AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BAD6085C-0424-4840-912B-7E1D9211D2AA}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{BAD6085C-0424-4840-912B-7E1D9211D2AA}.Debug|x64.Build.0 = Debug|Any CPU
+		{BAD6085C-0424-4840-912B-7E1D9211D2AA}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{BAD6085C-0424-4840-912B-7E1D9211D2AA}.Debug|x86.Build.0 = Debug|Any CPU
+		{BAD6085C-0424-4840-912B-7E1D9211D2AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BAD6085C-0424-4840-912B-7E1D9211D2AA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BAD6085C-0424-4840-912B-7E1D9211D2AA}.Release|x64.ActiveCfg = Release|Any CPU
+		{BAD6085C-0424-4840-912B-7E1D9211D2AA}.Release|x64.Build.0 = Release|Any CPU
+		{BAD6085C-0424-4840-912B-7E1D9211D2AA}.Release|x86.ActiveCfg = Release|Any CPU
+		{BAD6085C-0424-4840-912B-7E1D9211D2AA}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
