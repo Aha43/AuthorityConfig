@@ -1,15 +1,23 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.26124.0
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30717.126
 MinimumVisualStudioVersion = 15.0.26124.0
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuthorityConfig", "AuthorityConfig\AuthorityConfig.csproj", "{80DC3334-594B-455E-A0D9-DB14F66591FD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AuthorityConfig", "AuthorityConfig\AuthorityConfig.csproj", "{80DC3334-594B-455E-A0D9-DB14F66591FD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuthorityConfig.Domain", "AuthorityConfig.Domain\AuthorityConfig.Domain.csproj", "{2EC24076-83D1-42A2-8B8B-25509B1BC3C6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AuthorityConfig.Domain", "AuthorityConfig.Domain\AuthorityConfig.Domain.csproj", "{2EC24076-83D1-42A2-8B8B-25509B1BC3C6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuthorityConfig.Specification", "AuthorityConfig.Specification\AuthorityConfig.Specification.csproj", "{BAD6085C-0424-4840-912B-7E1D9211D2AA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AuthorityConfig.Specification", "AuthorityConfig.Specification\AuthorityConfig.Specification.csproj", "{BAD6085C-0424-4840-912B-7E1D9211D2AA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuthorityConfig.Infrastructure.AuthorityRepository.Sql", "AuthorityConfig.Infrastructure.AuthorityRepository.Sql\AuthorityConfig.Infrastructure.AuthorityRepository.Sql.csproj", "{25A3379A-215B-4A6B-AC35-8B77118A4F7B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AuthorityConfig.Infrastructure.AuthorityRepository.Sql", "AuthorityConfig.Infrastructure.AuthorityRepository.Sql\AuthorityConfig.Infrastructure.AuthorityRepository.Sql.csproj", "{25A3379A-215B-4A6B-AC35-8B77118A4F7B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01 Application", "01 Application", "{7A21FF32-DFB8-4449-98BC-BFE687BE85A0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03 Business", "03 Business", "{A6BF6C09-4531-4BAF-9F94-7746560B52EF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02 Domain and Specification", "02 Domain and Specification", "{4770659C-66B8-4D8F-805C-02A08393F33B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04 Data", "04 Data", "{E69BAA85-6DC4-4209-80B4-91D17708CD11}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,9 +27,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 		Release|x64 = Release|x64
 		Release|x86 = Release|x86
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{80DC3334-594B-455E-A0D9-DB14F66591FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -72,5 +77,17 @@ Global
 		{25A3379A-215B-4A6B-AC35-8B77118A4F7B}.Release|x64.Build.0 = Release|Any CPU
 		{25A3379A-215B-4A6B-AC35-8B77118A4F7B}.Release|x86.ActiveCfg = Release|Any CPU
 		{25A3379A-215B-4A6B-AC35-8B77118A4F7B}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{80DC3334-594B-455E-A0D9-DB14F66591FD} = {7A21FF32-DFB8-4449-98BC-BFE687BE85A0}
+		{2EC24076-83D1-42A2-8B8B-25509B1BC3C6} = {4770659C-66B8-4D8F-805C-02A08393F33B}
+		{BAD6085C-0424-4840-912B-7E1D9211D2AA} = {4770659C-66B8-4D8F-805C-02A08393F33B}
+		{25A3379A-215B-4A6B-AC35-8B77118A4F7B} = {E69BAA85-6DC4-4209-80B4-91D17708CD11}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D8CE23BD-1904-4E79-BD79-B200D98C433A}
 	EndGlobalSection
 EndGlobal
