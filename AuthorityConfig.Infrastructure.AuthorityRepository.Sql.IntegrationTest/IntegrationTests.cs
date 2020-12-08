@@ -14,7 +14,7 @@ namespace AuthorityConfig.Infrastructure.AuthorityRepository.Sql.IntegrationTest
     public class IntegrationTests
     {
         [Fact]
-        public async Task AuthorityConfigShouldBeUpdatedAsync()
+        public async Task SetConfigurationShouldNotFailAsync()
         {
             try
             {
@@ -29,6 +29,27 @@ namespace AuthorityConfig.Infrastructure.AuthorityRepository.Sql.IntegrationTest
                 };
 
                 await repo.SetConfigurationAsync(testConf, CancellationToken.None);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+        [Fact]
+        public async Task GetConfigurationShouldNotFailAsync()
+        {
+            try
+            {
+                var (repo, jsonSample) = Configure();
+
+                var result = await repo.GetConfigurationAsync("TestAuthority", CancellationToken.None);
+
+                Assert.NotNull(result);
+                Assert.Equal("TestAuthority", result.Authority);
+                Assert.Equal("Test data", result.Description);
+                Assert.Equal(jsonSample, result.Json);
+                Assert.Equal("https://test-uri", result.Uri);
             }
             catch (Exception ex)
             {

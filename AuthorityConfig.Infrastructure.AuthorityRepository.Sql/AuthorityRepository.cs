@@ -23,13 +23,20 @@ namespace AuthorityConfig.Infrastructure.AuthorityRepository.Sql
 
         public async Task<AuthorityDao> GetConfigurationAsync(string authority, CancellationToken cancellationToken)
         {
-            var procedure = "authconfig.pr__get_configuration";
-            using (var con = _connectionProvider.GetSqlConnection())
+            try
             {
-                var parameters = new DynamicParameters();
-                parameters.Add("authority", authority, DbType.String);
-                
-                return await con.QueryFirstOrDefaultAsync<AuthorityDao>(procedure, parameters, commandType: CommandType.StoredProcedure);
+                var procedure = "authconfig.pr__get_configuration";
+                using (var con = _connectionProvider.GetSqlConnection())
+                {
+                    var parameters = new DynamicParameters();
+                    parameters.Add("authority", authority, DbType.String);
+
+                    return await con.QueryFirstOrDefaultAsync<AuthorityDao>(procedure, parameters, commandType: CommandType.StoredProcedure);
+                }
+            }
+            catch (Exception ex)
+            {
+                throw ex;
             }
         }
 
