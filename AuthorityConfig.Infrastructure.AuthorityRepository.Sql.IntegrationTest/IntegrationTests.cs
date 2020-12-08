@@ -6,6 +6,7 @@ using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.IO;
 using System.Threading;
+using System.Threading.Tasks;
 using Xunit;
 
 namespace AuthorityConfig.Infrastructure.AuthorityRepository.Sql.IntegrationTest
@@ -13,7 +14,7 @@ namespace AuthorityConfig.Infrastructure.AuthorityRepository.Sql.IntegrationTest
     public class IntegrationTests
     {
         [Fact]
-        public void AuthorityConfigShouldBeUpdated()
+        public async Task AuthorityConfigShouldBeUpdatedAsync()
         {
             try
             {
@@ -27,7 +28,7 @@ namespace AuthorityConfig.Infrastructure.AuthorityRepository.Sql.IntegrationTest
                     Uri = "https://test-uri"
                 };
 
-                repo.SetConfigurationAsync(testConf, CancellationToken.None);
+                await repo.SetConfigurationAsync(testConf, CancellationToken.None);
             }
             catch (Exception ex)
             {
