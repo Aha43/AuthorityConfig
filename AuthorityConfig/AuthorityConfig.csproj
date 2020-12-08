@@ -2,6 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
+    <UserSecretsId>13aeb2e6-3f90-422d-ac87-90495ec7b08e</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>
@@ -11,6 +12,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\AuthorityConfig.Domain\AuthorityConfig.Domain.csproj" />
     <ProjectReference Include="..\AuthorityConfig.Infrastructure.AuthorityRepository.Sql\AuthorityConfig.Infrastructure.AuthorityRepository.Sql.csproj" />
     <ProjectReference Include="..\AuthorityConfig.Infrastructure.Manager\AuthorityConfig.Infrastructure.Manager.csproj" />
   </ItemGroup>
