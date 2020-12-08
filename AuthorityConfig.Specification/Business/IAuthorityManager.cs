@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace AuthorityConfig.Specification.Business
 {
-    interface IAuthorityManager
+    public interface IAuthorityManager
     {
         Task<IdserverConfig> GetConfigurationAsync(GetConfigParam param, CancellationToken cancellationToken);
         Task SetConfigurationAsync(SetConfigParam param, CancellationToken cancellationToken);
