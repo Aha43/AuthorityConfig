@@ -15,33 +15,51 @@
           <ConnectionProtocol>NotSpecified</ConnectionProtocol>
           <ApplicationName>Microsoft SQL Server Management Studio - Query</ApplicationName>
         </ConnectionNode>
+        <ConnectionNode Name="vt-dfsql2017\DEV:DIPS-AD\arha">
+          <Created>2020-12-06T20:10:48.9105248+01:00</Created>
+          <Type>SQL</Type>
+          <Server>vt-dfsql2017\DEV</Server>
+          <UserName />
+          <Authentication>Windows Authentication</Authentication>
+          <InitialDB />
+          <LoginTimeout>30</LoginTimeout>
+          <ExecutionTimeout>0</ExecutionTimeout>
+          <ConnectionProtocol>NotSpecified</ConnectionProtocol>
+          <ApplicationName>Microsoft SQL Server Management Studio - Query</ApplicationName>
+        </ConnectionNode>
       </Items>
     </LogicalFolder>
     <LogicalFolder Name="Queries" Type="0" Sorted="true">
       <Items>
         <FileNode Name="a_create_schema.sql">
-          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:ARNEPC:True</AssociatedConnectionMoniker>
-          <AssociatedConnSrvName>ARNEPC</AssociatedConnSrvName>
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:vt-dfsql2017\DEV:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>vt-dfsql2017\DEV</AssociatedConnSrvName>
           <AssociatedConnUserName />
           <FullPath>a_create_schema.sql</FullPath>
         </FileNode>
         <FileNode Name="b_create_config_table.sql">
-          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:ARNEPC:True</AssociatedConnectionMoniker>
-          <AssociatedConnSrvName>ARNEPC</AssociatedConnSrvName>
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:vt-dfsql2017\DEV:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>vt-dfsql2017\DEV</AssociatedConnSrvName>
           <AssociatedConnUserName />
           <FullPath>b_create_config_table.sql</FullPath>
         </FileNode>
         <FileNode Name="c_pr__set_configuration.sql">
-          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:ARNEPC:True</AssociatedConnectionMoniker>
-          <AssociatedConnSrvName>ARNEPC</AssociatedConnSrvName>
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:vt-dfsql2017\DEV:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>vt-dfsql2017\DEV</AssociatedConnSrvName>
           <AssociatedConnUserName />
           <FullPath>c_pr__set_configuration.sql</FullPath>
         </FileNode>
         <FileNode Name="d_pr__get_configuration.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:vt-dfsql2017\DEV:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>vt-dfsql2017\DEV</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>d_pr__get_configuration.sql</FullPath>
+        </FileNode>
+        <FileNode Name="test_c.sql">
           <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:ARNEPC:True</AssociatedConnectionMoniker>
           <AssociatedConnSrvName>ARNEPC</AssociatedConnSrvName>
           <AssociatedConnUserName />
-          <FullPath>d_pr__get_configuration.sql</FullPath>
+          <FullPath>test_c.sql</FullPath>
         </FileNode>
       </Items>
     </LogicalFolder>

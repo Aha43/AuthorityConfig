@@ -20,6 +20,9 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04 Data", "04 Data", "{E69BAA85-6DC4-4209-80B4-91D17708CD11}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "05 Testing", "05 Testing", "{F65DBDC2-2AFD-4BCC-AB25-8FB8D09FAB45}"
+	ProjectSection(SolutionItems) = preProject
+		data\authconfig.json = data\authconfig.json
+	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AuthorityConfig.Infrastructure.AuthorityRepository.Sql.IntegrationTest", "AuthorityConfig.Infrastructure.AuthorityRepository.Sql.IntegrationTest\AuthorityConfig.Infrastructure.AuthorityRepository.Sql.IntegrationTest.csproj", "{0237FB3C-CDF9-4AD5-BF74-CB9E8848E417}"
 EndProject

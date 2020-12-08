@@ -1,0 +1,1 @@
+execute authconfig.pr__set_configuration 'test_auth', 'test_json', 'test_uri', 'test_desc' 
