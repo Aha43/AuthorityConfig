@@ -7,6 +7,9 @@ using System.Threading;
 using System.Threading.Tasks;
 using System.Text.Json;
 using AuthorityConfig.Specification.Repository.Dao;
+using System.Linq;
+using IdentityServer4.Models;
+using System.Collections.Generic;
 
 namespace AuthorityConfig.Infrastructure.Manager
 {
@@ -20,15 +23,33 @@ namespace AuthorityConfig.Infrastructure.Manager
             _authorityRepository = authorityRepository;
         }
 
-        public async Task<IdserverConfig> GetConfigurationAsync(GetConfigParam param, CancellationToken cancellationToken)
+        private async Task<IdserverConfig> GetConfigurationAsync(string authority, CancellationToken cancellationToken)
         {
-            var stored = await _authorityRepository.GetConfigurationAsync(param.Authority, cancellationToken);
+            var stored = await _authorityRepository.GetConfigurationAsync(authority, cancellationToken);
             if (stored == null)
             {
                 return null;
             }
             var retVal = JsonSerializer.Deserialize<IdserverConfig>(stored.Json);
             return retVal;
+        }
+
+        private async Task SetConfigurationAsync(string authority, CancellationToken cancellationToken, IdserverConfig config = null, string uri = null, string description = null)
+        {
+            var dao = new AuthorityDao
+            {
+                Authority = authority,
+                Json = (config == null) ? null : JsonSerializer.Serialize(config),
+                Uri = uri,
+                Description = description
+            };
+
+            await _authorityRepository.SetConfigurationAsync(dao, cancellationToken);
+        }
+
+        public async Task<IdserverConfig> GetConfigurationAsync(GetConfigParam param, CancellationToken cancellationToken)
+        {
+            return await GetConfigurationAsync(param.Authority, cancellationToken);
         }
 
         public async Task SetConfigurationAsync(SetConfigParam param, CancellationToken cancellationToken)
@@ -43,6 +64,52 @@ namespace AuthorityConfig.Infrastructure.Manager
 
             await _authorityRepository.SetConfigurationAsync(dao, cancellationToken);
         }
+
+        #region set_client
+        public async Task SetClientAsync(SetClientParam param, CancellationToken cancellationToken)
+        {
+            var config = await GetConfigurationAsync(param.Authority, cancellationToken);
+            if (config == null)
+            {
+                throw new Exception("Authority " + param.Authority + " not found");
+            }
+
+            var client = GetClient(config, param);
+
+            AddScopes(client, param);
+            // ToDo: More modificators
+
+            await SetConfigurationAsync(authority: param.Authority, config: config, cancellationToken: cancellationToken);
+        }
+
+        private Client GetClient(IdserverConfig config, SetClientParam param)
+        {
+            var retVal = config.Clients.Where(c => c.ClientId.Equals(param.ClientId)).FirstOrDefault();
+            if (retVal == null)
+            {
+                return CreateClient(config, param);
+            }
+
+            return retVal;
+        }
+
+        private Client CreateClient(IdserverConfig config, SetClientParam param)
+        {
+            throw new NotImplementedException("not yet...");
+        }
+
+        private void AddScopes(Client client, SetClientParam param)
+        {
+            var scopesToAdd = param.ScopesToAdd;
+            if (!string.IsNullOrWhiteSpace(scopesToAdd))
+            {
+                var scopesToAddSet = new HashSet<string>(scopesToAdd.Split(' '));
+                var existingScopes = new HashSet<string>(client.AllowedScopes == null ? new string[] { } : client.AllowedScopes);
+                var newScopes = existingScopes.Union(scopesToAddSet);
+                client.AllowedScopes = newScopes.ToArray();
+            }
+        }
+        #endregion
 
     }
 
