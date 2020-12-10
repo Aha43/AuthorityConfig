@@ -10,7 +10,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\AuthorityConfig.Specification\AuthorityConfig.Specification.csproj" />
+    <ProjectReference Include="..\AuthorityConfig.Infrastructure.Manager\AuthorityConfig.Infrastructure.Manager.csproj" />
   </ItemGroup>
 
 </Project>
