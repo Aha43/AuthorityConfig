@@ -1,0 +1,1 @@
+$Env:AuthorityConfigAddress = "https://localhost:44389/"
