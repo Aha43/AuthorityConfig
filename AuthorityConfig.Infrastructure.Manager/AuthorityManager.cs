@@ -23,6 +23,10 @@ namespace AuthorityConfig.Infrastructure.Manager
         public async Task<IdserverConfig> GetConfigurationAsync(GetConfigParam param, CancellationToken cancellationToken)
         {
             var stored = await _authorityRepository.GetConfigurationAsync(param.Authority, cancellationToken);
+            if (stored == null)
+            {
+                return null;
+            }
             var retVal = JsonSerializer.Deserialize<IdserverConfig>(stored.Json);
             return retVal;
         }

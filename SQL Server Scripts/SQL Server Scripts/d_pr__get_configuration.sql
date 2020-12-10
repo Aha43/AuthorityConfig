@@ -6,5 +6,5 @@ as begin
 		c.uri,
 		c.json,
 		c.description 
-	from authconfig.config c where c.authority = authority 
+	from authconfig.config c where c.authority = @authority 
 end
