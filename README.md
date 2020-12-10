@@ -8,3 +8,5 @@ REST service and Powershell based cli for configurationg an OIDC authority servi
 [Tools used](https://github.com/Aha43/AuthorityConfig/wiki/Tools)
 
 [TODO board](https://github.com/Aha43/AuthorityConfig/projects/1)
+
+[Environment variables used by PowerShell functions](https://github.com/Aha43/AuthorityConfig/wiki/Envirnment-variables-used-by-PowerShell-finctions)
