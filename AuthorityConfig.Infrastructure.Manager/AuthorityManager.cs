@@ -65,7 +65,6 @@ namespace AuthorityConfig.Infrastructure.Manager
             await _authorityRepository.SetConfigurationAsync(dao, cancellationToken);
         }
 
-        #region set_client
         public async Task SetClientAsync(SetClientParam param, CancellationToken cancellationToken)
         {
             var config = await GetConfigurationAsync(param.Authority, cancellationToken);
@@ -82,6 +81,7 @@ namespace AuthorityConfig.Infrastructure.Manager
             await SetConfigurationAsync(authority: param.Authority, config: config, cancellationToken: cancellationToken);
         }
 
+        #region set_client_support
         private Client GetClient(IdserverConfig config, SetClientParam param)
         {
             var retVal = config.Clients.Where(c => c.ClientId.Equals(param.ClientId)).FirstOrDefault();
@@ -110,6 +110,34 @@ namespace AuthorityConfig.Infrastructure.Manager
             }
         }
         #endregion
+
+        public async Task AddApiAsync(AddApiParam param, CancellationToken cancellationToken)
+        {
+            var config = await GetConfigurationAsync(param.Authority, cancellationToken);
+            if (config == null)
+            {
+                throw new Exception("Authority " + param.Authority + " not found");
+            }
+
+            var api = config.Apis == null ? null : config.Apis.Where(a => a.Name.Equals(param.Name)).FirstOrDefault();
+            if (api != null)
+            {
+                throw new Exception("Api exists");
+            }
+
+            api = new ApiScope
+            {
+                Name = param.Name,
+                DisplayName = string.IsNullOrWhiteSpace(param.DisplayName) ? param.Name : param.DisplayName
+            };
+
+            var newApis = new List<ApiScope>();
+            if (config.Apis != null) newApis.AddRange(config.Apis);
+            newApis.Add(api);
+            config.Apis = newApis;
+
+            await SetConfigurationAsync(authority: param.Authority, config: config, cancellationToken: cancellationToken);
+        }
 
     }
 

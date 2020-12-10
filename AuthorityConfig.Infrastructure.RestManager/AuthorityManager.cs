@@ -42,6 +42,11 @@ namespace AuthorityConfig.Infrastructure.RestManager
             throw new NotImplementedException();
         }
 
+        public Task AddApiAsync(AddApiParam param, CancellationToken cancellationToken)
+        {
+            throw new NotImplementedException();
+        }
+
     }
 
 }
