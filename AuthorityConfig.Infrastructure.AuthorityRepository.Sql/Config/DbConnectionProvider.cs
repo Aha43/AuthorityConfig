@@ -9,7 +9,7 @@ namespace AuthorityConfig.Infrastructure.AuthorityRepository.Sql.Config
 
         public DbConnectionProvider(IConfiguration configuration)
         {
-            _connectionString = configuration.GetConnectionString("Authority");
+            _connectionString = configuration.GetConnectionString("AuthorityConfig");
         }
 
         public SqlConnection GetSqlConnection()
