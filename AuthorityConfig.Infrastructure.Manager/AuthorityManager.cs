@@ -139,6 +139,23 @@ namespace AuthorityConfig.Infrastructure.Manager
             await SetConfigurationAsync(authority: param.Authority, config: config, cancellationToken: cancellationToken);
         }
 
+        public async Task<Authorities> GetAuthoritiesAsync(CancellationToken cancellationToken)
+        {
+            var names = await _authorityRepository.GetAuthorityNames(cancellationToken);
+            return new Authorities { Names = names };
+        }
+
+        public async Task<Authority> GetAuthorityAsync(GetAuthorityParam param, CancellationToken cancellationToken)
+        {
+            var stored = await _authorityRepository.GetConfigurationAsync(param.Authority, cancellationToken);
+            return new Authority
+            {
+                Description = stored.Description,
+                Name = stored.Authority,
+                Uri = stored.Uri
+            };
+        }
+
     }
 
 }

@@ -1,4 +1,5 @@
 ﻿using AuthorityConfig.Controllers.Templates;
+using AuthorityConfig.Domain.Model;
 using AuthorityConfig.Domain.Param;
 using AuthorityConfig.Specification.Business;
 using Microsoft.AspNetCore.Mvc;
@@ -7,8 +8,8 @@ namespace AuthorityConfig.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
-    public class SetClientController : ControllerTemplate<SetClientParam>
+    public class GetAuthorityController : ControllerTemplateWithResultParam<Authority, GetAuthorityParam>
     {
-        public SetClientController(IAuthorityManager authorityManager) : base(authorityManager.SetClientAsync) { }
+        public GetAuthorityController(IAuthorityManager authorityManager) : base(authorityManager.GetAuthorityAsync) { }
     }
 }

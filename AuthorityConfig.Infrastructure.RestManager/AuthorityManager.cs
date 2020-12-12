@@ -47,6 +47,15 @@ namespace AuthorityConfig.Infrastructure.RestManager
             throw new NotImplementedException();
         }
 
+        public Task<Authorities> GetAuthoritiesAsync(CancellationToken cancellation)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<Authority> GetAuthorityAsync(GetAuthorityParam param, CancellationToken cancellationToken)
+        {
+            throw new NotImplementedException();
+        }
     }
 
 }

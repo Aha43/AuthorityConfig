@@ -8,6 +8,7 @@ using System.Data.SqlClient;
 using System.Threading;
 using System.Linq;
 using System.Threading.Tasks;
+using System.Collections.Generic;
 
 namespace AuthorityConfig.Infrastructure.AuthorityRepository.Sql
 {
@@ -19,6 +20,23 @@ namespace AuthorityConfig.Infrastructure.AuthorityRepository.Sql
             DbConnectionProvider connectionProvider)
         {
             _connectionProvider = connectionProvider;
+        }
+
+        public async Task<IEnumerable<string>> GetAuthorityNames(CancellationToken cancellation)
+        {
+            try
+            {
+                var procedure = "authconfig.pr__get_authorities";
+                using (var con = _connectionProvider.GetSqlConnection())
+                {
+                    return await con.QueryAsync<string>(procedure, commandType: CommandType.StoredProcedure);
+                }
+
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
         }
 
         public async Task<AuthorityDao> GetConfigurationAsync(string authority, CancellationToken cancellationToken)
