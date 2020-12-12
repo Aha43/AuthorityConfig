@@ -1,5 +1,4 @@
-﻿using AuthorityConfig.Domain.Model;
-using System;
+﻿using System;
 using System.ComponentModel.DataAnnotations;
 using System.IO;
 using System.Text.Json;

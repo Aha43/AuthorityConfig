@@ -11,7 +11,7 @@ using System.Linq;
 using IdentityServer4.Models;
 using System.Collections.Generic;
 
-namespace AuthorityConfig.Infrastructure.Manager
+namespace AuthorityConfig.Infrastructure.DIPS.Front.Manager
 {
     public class AuthorityManager : IAuthorityManager
     {
@@ -47,7 +47,7 @@ namespace AuthorityConfig.Infrastructure.Manager
             await _authorityRepository.SetConfigurationAsync(dao, cancellationToken);
         }
 
-        public async Task<IdserverConfig> GetConfigurationAsync(GetConfigParam param, CancellationToken cancellationToken)
+        public async Task<object> GetConfigurationAsync(GetConfigParam param, CancellationToken cancellationToken)
         {
             return await GetConfigurationAsync(param.Authority, cancellationToken);
         }

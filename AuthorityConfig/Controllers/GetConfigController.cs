@@ -8,7 +8,7 @@ namespace AuthorityConfig.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
-    public class GetConfigController : ControllerTemplateWithResultParam<IdserverConfig, GetConfigParam>
+    public class GetConfigController : ControllerTemplateWithResultParam<object, GetConfigParam>
     {
        public GetConfigController(IAuthorityManager authorityManager) : base(authorityManager.GetConfigurationAsync) { }
     }

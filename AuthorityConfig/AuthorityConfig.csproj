@@ -14,7 +14,7 @@
   <ItemGroup>
     <ProjectReference Include="..\AuthorityConfig.Domain\AuthorityConfig.Domain.csproj" />
     <ProjectReference Include="..\AuthorityConfig.Infrastructure.AuthorityRepository.Sql\AuthorityConfig.Infrastructure.AuthorityRepository.Sql.csproj" />
-    <ProjectReference Include="..\AuthorityConfig.Infrastructure.Manager\AuthorityConfig.Infrastructure.Manager.csproj" />
+    <ProjectReference Include="..\AuthorityConfig.Infrastructure.Manager\AuthorityConfig.Infrastructure.DIPS.Front.Manager.csproj" />
   </ItemGroup>
 
 </Project>

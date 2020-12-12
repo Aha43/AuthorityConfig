@@ -1,5 +1,5 @@
 ﻿using AuthorityConfig.Infrastructure.AuthorityRepository.Sql.Config;
-using AuthorityConfig.Infrastructure.Manager.Config;
+using AuthorityConfig.Infrastructure.DIPS.Front.Manager.Config;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 

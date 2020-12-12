@@ -6,11 +6,8 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="IdentityServer4.Storage" Version="4.1.1" />
     <PackageReference Include="YamlDotNet" Version="9.1.0" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\AuthorityConfig.Domain\AuthorityConfig.Domain.csproj" />
   </ItemGroup>
 
 </Project>
