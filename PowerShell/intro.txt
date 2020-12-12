@@ -1,0 +1,15 @@
+What
+
+Configuration of an Authority server (used by clients to authorize users) includes: 
+    Which client can use it
+    How a client interact with it
+    What API a client can access (through the access token it publishes to the client)
+
+Currently the DIPS Front Authority server is configured by a config file
+
+My d:hack was to see how to implement a powershell based cli to do the configuration
+
+Advantages (I focus first on development env scenarios)
+    Developers do not need to know / have access to configuration file on server
+    Do not need to understand config structure: uses well defined commands with help info (powershell is good in this department) to do task like adding a client, 
+    see info about client and add api access to clients.

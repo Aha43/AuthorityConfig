@@ -44,16 +44,22 @@
           <FullPath>b_create_config_table.sql</FullPath>
         </FileNode>
         <FileNode Name="c_pr__set_configuration.sql">
-          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:vt-dfsql2017\DEV:True</AssociatedConnectionMoniker>
-          <AssociatedConnSrvName>vt-dfsql2017\DEV</AssociatedConnSrvName>
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:ARNEPC:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>ARNEPC</AssociatedConnSrvName>
           <AssociatedConnUserName />
           <FullPath>c_pr__set_configuration.sql</FullPath>
         </FileNode>
         <FileNode Name="d_pr__get_configuration.sql">
-          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:vt-dfsql2017\DEV:True</AssociatedConnectionMoniker>
-          <AssociatedConnSrvName>vt-dfsql2017\DEV</AssociatedConnSrvName>
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:ARNEPC:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>ARNEPC</AssociatedConnSrvName>
           <AssociatedConnUserName />
           <FullPath>d_pr__get_configuration.sql</FullPath>
+        </FileNode>
+        <FileNode Name="e_pr__get_authorities.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:ARNEPC:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>ARNEPC</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>e_pr__get_authorities.sql</FullPath>
         </FileNode>
         <FileNode Name="test_c.sql">
           <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:ARNEPC:True</AssociatedConnectionMoniker>

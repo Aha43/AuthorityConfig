@@ -22,7 +22,7 @@ namespace AuthorityConfig.Infrastructure.AuthorityRepository.Sql.IntegrationTest
 
                 var testConf = new AuthorityDao
                 {
-                    Authority = "TestAuthority2",
+                    Authority = "TestAuthority",
                     Description = "Test data",
                     Json = jsonSample,
                     Uri = "https://test-uri"
