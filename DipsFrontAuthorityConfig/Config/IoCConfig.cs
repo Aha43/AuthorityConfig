@@ -3,7 +3,7 @@ using AuthorityConfig.Infrastructure.DIPS.Front.Manager.Config;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace AuthorityConfig.Config
+namespace DipsFrontAuthorityConfig.Config
 {
     public static class IoCConfig
     {
