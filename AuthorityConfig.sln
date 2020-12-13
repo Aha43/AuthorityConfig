@@ -32,6 +32,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "06 Tools", "06 Tools", "{48
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AuthorityConfig.Infrastructure.DIPS.Front.Manager", "AuthorityConfig.Infrastructure.Manager\AuthorityConfig.Infrastructure.DIPS.Front.Manager.csproj", "{71E7C3EB-C122-4553-A00F-02C715F9F51D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuthorityConfig.Api", "AuthorityConfig.Api\AuthorityConfig.Api.csproj", "{B76C527C-0697-4958-A820-2F1E258D94DF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -126,6 +128,18 @@ Global
 		{71E7C3EB-C122-4553-A00F-02C715F9F51D}.Release|x64.Build.0 = Release|Any CPU
 		{71E7C3EB-C122-4553-A00F-02C715F9F51D}.Release|x86.ActiveCfg = Release|Any CPU
 		{71E7C3EB-C122-4553-A00F-02C715F9F51D}.Release|x86.Build.0 = Release|Any CPU
+		{B76C527C-0697-4958-A820-2F1E258D94DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B76C527C-0697-4958-A820-2F1E258D94DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B76C527C-0697-4958-A820-2F1E258D94DF}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{B76C527C-0697-4958-A820-2F1E258D94DF}.Debug|x64.Build.0 = Debug|Any CPU
+		{B76C527C-0697-4958-A820-2F1E258D94DF}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{B76C527C-0697-4958-A820-2F1E258D94DF}.Debug|x86.Build.0 = Debug|Any CPU
+		{B76C527C-0697-4958-A820-2F1E258D94DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B76C527C-0697-4958-A820-2F1E258D94DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B76C527C-0697-4958-A820-2F1E258D94DF}.Release|x64.ActiveCfg = Release|Any CPU
+		{B76C527C-0697-4958-A820-2F1E258D94DF}.Release|x64.Build.0 = Release|Any CPU
+		{B76C527C-0697-4958-A820-2F1E258D94DF}.Release|x86.ActiveCfg = Release|Any CPU
+		{B76C527C-0697-4958-A820-2F1E258D94DF}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
