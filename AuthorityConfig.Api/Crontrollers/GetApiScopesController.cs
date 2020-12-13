@@ -6,8 +6,8 @@ using System.Collections.Generic;
 
 namespace AuthorityConfig.Api.Crontrollers
 {
-    public class GetClientsController : PostControllerTemplateWithResultParam<IEnumerable<Client>, AuthorityParam>
+    public class GetApiScopesController : PostControllerTemplateWithResultParam<IEnumerable<ApiScope>, AuthorityParam>
     {
-        public GetClientsController(IAuthorityManager authorityManager) : base(authorityManager.GetClientsAsync) { }
+        public GetApiScopesController(IAuthorityManager authorityManager) : base(authorityManager.GetApiScopesAsync) { }
     }
 }

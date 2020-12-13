@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 
 namespace AuthorityConfig.Api.Crontrollers.Templates
 {
+    [ApiController]
+    [Route("api/[controller]")]
     public class PostControllerTemplateWithParam<P>
     {
         private readonly Func<P, CancellationToken, Task> _func;
