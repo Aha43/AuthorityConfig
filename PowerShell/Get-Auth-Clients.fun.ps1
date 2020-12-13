@@ -22,19 +22,18 @@ function Get-Auth-Clients(
     $param = @{
         authority = $Authority
     }
-    $data = (Invoke-AuthorityConfig-Api -method "GetConfig" -param $param -AuthorityConfigAddress $AuthorityConfigAddress) 
+    $data = (Invoke-AuthorityConfig-Api -method "GetClients" -param $param -AuthorityConfigAddress $AuthorityConfigAddress) 
     if ($data) {
-        $clients = $data.clients
         if ($ClientId) {
-            $clients = ($clients | Where-Object { $_.clientId -eq $ClientId})
+            $data = ($data | Where-Object { $_.clientId -eq $ClientId})
         }
         if ($Details) {
-            $clients | ForEach-Object {
+            $data | ForEach-Object {
                 Write-Host ($_ | ConvertTo-Json)
                 Write-Host "***"
             }
         } else {
-            $clients | ForEach-Object {
+            $data | ForEach-Object {
                 Write-Host $_.clientId
             }
         }
