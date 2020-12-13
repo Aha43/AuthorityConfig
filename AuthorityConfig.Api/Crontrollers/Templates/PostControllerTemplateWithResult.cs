@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace AuthorityConfig.Api.Crontrollers.Templates
 {
-    public class PostControllerTemplateWithResult<T>
+    public class PostControllerTemplateWithResult<R>
     {
-        private readonly Func<CancellationToken, Task<T>> _func;
+        private readonly Func<CancellationToken, Task<R>> _func;
 
-        public PostControllerTemplateWithResult(Func<CancellationToken, Task<T>> func)
+        public PostControllerTemplateWithResult(Func<CancellationToken, Task<R>> func)
         {
             _func = func;
         }
@@ -22,11 +22,11 @@ namespace AuthorityConfig.Api.Crontrollers.Templates
             {
                 using var cts = new CancellationTokenSource();
                 var result = await _func(cts.Token);
-                return new OkObjectResult(new AuthorityConfigResponseWithData<T>(result));
+                return new OkObjectResult(new AuthorityConfigResponseWithData<R>(result));
             }
             catch (Exception ex)
             {
-                return new OkObjectResult(new AuthorityConfigResponseWithData<T>(ex));
+                return new OkObjectResult(new AuthorityConfigResponseWithData<R>(ex));
             }
         }
 
