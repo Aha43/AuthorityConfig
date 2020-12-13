@@ -4,13 +4,13 @@ using System;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace AuthorityConfig.Controllers.Templates
+namespace AuthorityConfig.Api.Crontrollers.Templates
 {
-    public class ControllerTemplate<P> : Controller
+    public class PostControllerTemplateWithParam<P>
     {
         private readonly Func<P, CancellationToken, Task> _func;
 
-        public ControllerTemplate(Func<P, CancellationToken, Task> func)
+        public PostControllerTemplateWithParam(Func<P, CancellationToken, Task> func)
         {
             _func = func;
         }

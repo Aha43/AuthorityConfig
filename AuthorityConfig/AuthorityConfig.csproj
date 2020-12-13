@@ -12,6 +12,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\AuthorityConfig.Api\AuthorityConfig.Api.csproj" />
     <ProjectReference Include="..\AuthorityConfig.Domain\AuthorityConfig.Domain.csproj" />
     <ProjectReference Include="..\AuthorityConfig.Infrastructure.AuthorityRepository.Sql\AuthorityConfig.Infrastructure.AuthorityRepository.Sql.csproj" />
     <ProjectReference Include="..\AuthorityConfig.Infrastructure.Manager\AuthorityConfig.Infrastructure.DIPS.Front.Manager.csproj" />

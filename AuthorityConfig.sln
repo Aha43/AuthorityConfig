@@ -32,7 +32,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "06 Tools", "06 Tools", "{48
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AuthorityConfig.Infrastructure.DIPS.Front.Manager", "AuthorityConfig.Infrastructure.Manager\AuthorityConfig.Infrastructure.DIPS.Front.Manager.csproj", "{71E7C3EB-C122-4553-A00F-02C715F9F51D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuthorityConfig.Api", "AuthorityConfig.Api\AuthorityConfig.Api.csproj", "{B76C527C-0697-4958-A820-2F1E258D94DF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AuthorityConfig.Api", "AuthorityConfig.Api\AuthorityConfig.Api.csproj", "{B76C527C-0697-4958-A820-2F1E258D94DF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -152,6 +152,7 @@ Global
 		{0237FB3C-CDF9-4AD5-BF74-CB9E8848E417} = {F65DBDC2-2AFD-4BCC-AB25-8FB8D09FAB45}
 		{AA3AEBB3-0376-4D01-8560-5A3A76912215} = {48C58559-B70C-405B-B4A4-8D01D1C31992}
 		{71E7C3EB-C122-4553-A00F-02C715F9F51D} = {A6BF6C09-4531-4BAF-9F94-7746560B52EF}
+		{B76C527C-0697-4958-A820-2F1E258D94DF} = {7A21FF32-DFB8-4449-98BC-BFE687BE85A0}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D8CE23BD-1904-4E79-BD79-B200D98C433A}
