@@ -9,7 +9,7 @@ namespace AuthorityConfig.Api.Crontrollers
 {
     [ApiController]
     [Route("api/[controller]")]
-    public class GetClientsController : PostControllerTemplateWithResultParam<IEnumerable<Client>, GetClientsParam>
+    public class GetClientsController : PostControllerTemplateWithResultParam<IEnumerable<Client>, AuthorityParam>
     {
         public GetClientsController(IAuthorityManager authorityManager) : base(authorityManager.GetClientsAsync) { }
     }

@@ -7,7 +7,7 @@ namespace AuthorityConfig.Api.Crontrollers
 {
     [ApiController]
     [Route("api/[controller]")]
-    public class GetConfigController : PostControllerTemplateWithResultParam<object, GetConfigParam>
+    public class GetConfigController : PostControllerTemplateWithResultParam<object, AuthorityParam>
     {
        public GetConfigController(IAuthorityManager authorityManager) : base(authorityManager.GetConfigurationAsync) { }
     }
