@@ -1,5 +1,5 @@
 # AuthorityConfig
-REST service and Powershell based cli for configurationg an OIDC authority service
+REST API and Powershell based cli for configurationg an OIDC authority service
 
 **Pre alpha**
 
