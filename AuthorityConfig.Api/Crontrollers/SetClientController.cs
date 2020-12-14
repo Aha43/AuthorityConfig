@@ -9,3 +9,4 @@ namespace AuthorityConfig.Api.Crontrollers
         public SetClientController(IAuthorityManager authorityManager) : base(authorityManager.SetClientAsync) { }
     }
 }
+ 

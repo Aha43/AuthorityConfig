@@ -8,7 +8,7 @@
     PS> Add-Auth-Api -Authority <authorityconfig> -Name <apiname> -DisplayName <displayname>
     Adds API with given name and display name
 #>
-function Add-Auth-Api(
+function Add-Auth-Api-Scope(
     [Parameter(Mandatory = $true)][string]$Authority,
     [Parameter(Mandatory = $true)][string]$Name,
     [Parameter(Mandatory = $false)][string]$DisplayName,
@@ -19,5 +19,5 @@ function Add-Auth-Api(
         name = $Name
         displayName = $DisplayName
     }
-    Invoke-AuthorityConfig-Api -method "AddApi" -param $param -AuthorityConfigAddress $AuthorityConfigAddress 
+    Invoke-AuthorityConfig-Api -method "AddApiScope" -param $param -AuthorityConfigAddress $AuthorityConfigAddress 
 }

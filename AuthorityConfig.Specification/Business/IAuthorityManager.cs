@@ -16,6 +16,6 @@ namespace AuthorityConfig.Specification.Business
         Task<object> GetConfigurationAsync(AuthorityParam param, CancellationToken cancellationToken);
         Task SetConfigurationAsync(SetConfigParam param, CancellationToken cancellationToken);
         Task SetClientAsync(SetClientParam param, CancellationToken cancellationToken);
-        Task AddApiAsync(AddApiParam param, CancellationToken cancellationToken);
+        Task AddApiScopeAsync(AddApiParam param, CancellationToken cancellationToken);
     }
 }
