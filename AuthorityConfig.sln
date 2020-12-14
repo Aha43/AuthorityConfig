@@ -7,20 +7,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AuthorityConfig.Domain", "A
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AuthorityConfig.Specification", "AuthorityConfig.Specification\AuthorityConfig.Specification.csproj", "{BAD6085C-0424-4840-912B-7E1D9211D2AA}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AuthorityConfig.Infrastructure.AuthorityRepository.Sql", "AuthorityConfig.Infrastructure.AuthorityRepository.Sql\AuthorityConfig.Infrastructure.AuthorityRepository.Sql.csproj", "{25A3379A-215B-4A6B-AC35-8B77118A4F7B}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01 API", "01 API", "{7A21FF32-DFB8-4449-98BC-BFE687BE85A0}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02 Domain and Specification", "02 Domain and Specification", "{4770659C-66B8-4D8F-805C-02A08393F33B}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03 Data", "03 Data", "{E69BAA85-6DC4-4209-80B4-91D17708CD11}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04 Testing", "04 Testing", "{F65DBDC2-2AFD-4BCC-AB25-8FB8D09FAB45}"
-	ProjectSection(SolutionItems) = preProject
-		data\authconfig.json = data\authconfig.json
-	EndProjectSection
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AuthorityConfig.Infrastructure.AuthorityRepository.Sql.IntegrationTest", "AuthorityConfig.Infrastructure.AuthorityRepository.Sql.IntegrationTest\AuthorityConfig.Infrastructure.AuthorityRepository.Sql.IntegrationTest.csproj", "{0237FB3C-CDF9-4AD5-BF74-CB9E8848E417}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AuthorityConfig.Api", "AuthorityConfig.Api\AuthorityConfig.Api.csproj", "{B76C527C-0697-4958-A820-2F1E258D94DF}"
 EndProject
@@ -58,30 +47,6 @@ Global
 		{BAD6085C-0424-4840-912B-7E1D9211D2AA}.Release|x64.Build.0 = Release|Any CPU
 		{BAD6085C-0424-4840-912B-7E1D9211D2AA}.Release|x86.ActiveCfg = Release|Any CPU
 		{BAD6085C-0424-4840-912B-7E1D9211D2AA}.Release|x86.Build.0 = Release|Any CPU
-		{25A3379A-215B-4A6B-AC35-8B77118A4F7B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{25A3379A-215B-4A6B-AC35-8B77118A4F7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{25A3379A-215B-4A6B-AC35-8B77118A4F7B}.Debug|x64.ActiveCfg = Debug|Any CPU
-		{25A3379A-215B-4A6B-AC35-8B77118A4F7B}.Debug|x64.Build.0 = Debug|Any CPU
-		{25A3379A-215B-4A6B-AC35-8B77118A4F7B}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{25A3379A-215B-4A6B-AC35-8B77118A4F7B}.Debug|x86.Build.0 = Debug|Any CPU
-		{25A3379A-215B-4A6B-AC35-8B77118A4F7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{25A3379A-215B-4A6B-AC35-8B77118A4F7B}.Release|Any CPU.Build.0 = Release|Any CPU
-		{25A3379A-215B-4A6B-AC35-8B77118A4F7B}.Release|x64.ActiveCfg = Release|Any CPU
-		{25A3379A-215B-4A6B-AC35-8B77118A4F7B}.Release|x64.Build.0 = Release|Any CPU
-		{25A3379A-215B-4A6B-AC35-8B77118A4F7B}.Release|x86.ActiveCfg = Release|Any CPU
-		{25A3379A-215B-4A6B-AC35-8B77118A4F7B}.Release|x86.Build.0 = Release|Any CPU
-		{0237FB3C-CDF9-4AD5-BF74-CB9E8848E417}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0237FB3C-CDF9-4AD5-BF74-CB9E8848E417}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0237FB3C-CDF9-4AD5-BF74-CB9E8848E417}.Debug|x64.ActiveCfg = Debug|Any CPU
-		{0237FB3C-CDF9-4AD5-BF74-CB9E8848E417}.Debug|x64.Build.0 = Debug|Any CPU
-		{0237FB3C-CDF9-4AD5-BF74-CB9E8848E417}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{0237FB3C-CDF9-4AD5-BF74-CB9E8848E417}.Debug|x86.Build.0 = Debug|Any CPU
-		{0237FB3C-CDF9-4AD5-BF74-CB9E8848E417}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0237FB3C-CDF9-4AD5-BF74-CB9E8848E417}.Release|Any CPU.Build.0 = Release|Any CPU
-		{0237FB3C-CDF9-4AD5-BF74-CB9E8848E417}.Release|x64.ActiveCfg = Release|Any CPU
-		{0237FB3C-CDF9-4AD5-BF74-CB9E8848E417}.Release|x64.Build.0 = Release|Any CPU
-		{0237FB3C-CDF9-4AD5-BF74-CB9E8848E417}.Release|x86.ActiveCfg = Release|Any CPU
-		{0237FB3C-CDF9-4AD5-BF74-CB9E8848E417}.Release|x86.Build.0 = Release|Any CPU
 		{B76C527C-0697-4958-A820-2F1E258D94DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{B76C527C-0697-4958-A820-2F1E258D94DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B76C527C-0697-4958-A820-2F1E258D94DF}.Debug|x64.ActiveCfg = Debug|Any CPU
@@ -101,8 +66,6 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{2EC24076-83D1-42A2-8B8B-25509B1BC3C6} = {4770659C-66B8-4D8F-805C-02A08393F33B}
 		{BAD6085C-0424-4840-912B-7E1D9211D2AA} = {4770659C-66B8-4D8F-805C-02A08393F33B}
-		{25A3379A-215B-4A6B-AC35-8B77118A4F7B} = {E69BAA85-6DC4-4209-80B4-91D17708CD11}
-		{0237FB3C-CDF9-4AD5-BF74-CB9E8848E417} = {F65DBDC2-2AFD-4BCC-AB25-8FB8D09FAB45}
 		{B76C527C-0697-4958-A820-2F1E258D94DF} = {7A21FF32-DFB8-4449-98BC-BFE687BE85A0}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
