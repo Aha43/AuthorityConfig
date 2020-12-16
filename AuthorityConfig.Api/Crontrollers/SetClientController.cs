@@ -6,7 +6,7 @@ namespace AuthorityConfig.Api.Crontrollers
 {
     public class SetClientController : PostControllerTemplateWithParam<SetClientParam>
     {
-        public SetClientController(IAuthorityManager authorityManager) : base(authorityManager.SetClientAsync) { }
+        public SetClientController(IClientManager manager) : base(manager.SetClientAsync) { }
     }
 }
  

@@ -8,6 +8,6 @@ namespace AuthorityConfig.Api.Crontrollers
 {
     public class GetClientsController : PostControllerTemplateWithResultParam<IEnumerable<Client>, AuthorityParam>
     {
-        public GetClientsController(IAuthorityManager authorityManager) : base(authorityManager.GetClientsAsync) { }
+        public GetClientsController(IClientManager manager) : base(manager.GetClientsAsync) { }
     }
 }

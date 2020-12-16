@@ -6,6 +6,6 @@ namespace AuthorityConfig.Api.Crontrollers
 {
     public class GetAuthoritiesController : PostControllerTemplateWithResult<Authorities> 
     { 
-        public GetAuthoritiesController(IAuthorityManager authorityManager) : base(authorityManager.GetAuthoritiesAsync) { }
+        public GetAuthoritiesController(IAuthorityManager manager) : base(manager.GetAuthoritiesAsync) { }
     }
 }

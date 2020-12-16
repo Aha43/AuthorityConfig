@@ -8,6 +8,6 @@ namespace AuthorityConfig.Api.Crontrollers
 {
     public class GetApiScopesController : PostControllerTemplateWithResultParam<IEnumerable<ApiScope>, AuthorityParam>
     {
-        public GetApiScopesController(IAuthorityManager authorityManager) : base(authorityManager.GetApiScopesAsync) { }
+        public GetApiScopesController(IApiScopeManager manager) : base(manager.GetApiScopesAsync) { }
     }
 }

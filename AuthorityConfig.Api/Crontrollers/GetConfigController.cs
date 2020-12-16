@@ -6,6 +6,6 @@ namespace AuthorityConfig.Api.Crontrollers
 {
     public class GetConfigController : PostControllerTemplateWithResultParam<object, AuthorityParam>
     {
-       public GetConfigController(IAuthorityManager authorityManager) : base(authorityManager.GetConfigurationAsync) { }
+       public GetConfigController(IAuthorityManager manager) : base(manager.GetConfigurationAsync) { }
     }
 }

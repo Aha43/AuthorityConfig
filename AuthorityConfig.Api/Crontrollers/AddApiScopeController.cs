@@ -5,9 +5,7 @@ using AuthorityConfig.Specification.Business;
 namespace AuthorityConfig.Api.Crontrollers
 {
     public class AddApiScopeController : PostControllerTemplateWithParam<AddApiParam>
-    {
-        public readonly IAuthorityManager _authorityManager;
-
-        public AddApiScopeController(IAuthorityManager authorityManager) : base(authorityManager.AddApiScopeAsync) { }
+    { 
+        public AddApiScopeController(IApiScopeManager manager) : base(manager.AddApiScopeAsync) { }
     }
 }
