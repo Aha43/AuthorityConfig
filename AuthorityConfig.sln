@@ -15,6 +15,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AuthorityConfig.Api", "Auth
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuthorityConfig.Utility", "AuthorityConfig.Utility\AuthorityConfig.Utility.csproj", "{4D376310-227D-47A1-AA55-E976559A584C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuthorityConfig.Utility.UnitTest", "AuthorityConfig.Utility.UnitTest\AuthorityConfig.Utility.UnitTest.csproj", "{1FE04EDC-FF11-4545-8826-2717B3E523C5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -73,6 +75,18 @@ Global
 		{4D376310-227D-47A1-AA55-E976559A584C}.Release|x64.Build.0 = Release|Any CPU
 		{4D376310-227D-47A1-AA55-E976559A584C}.Release|x86.ActiveCfg = Release|Any CPU
 		{4D376310-227D-47A1-AA55-E976559A584C}.Release|x86.Build.0 = Release|Any CPU
+		{1FE04EDC-FF11-4545-8826-2717B3E523C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1FE04EDC-FF11-4545-8826-2717B3E523C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1FE04EDC-FF11-4545-8826-2717B3E523C5}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{1FE04EDC-FF11-4545-8826-2717B3E523C5}.Debug|x64.Build.0 = Debug|Any CPU
+		{1FE04EDC-FF11-4545-8826-2717B3E523C5}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{1FE04EDC-FF11-4545-8826-2717B3E523C5}.Debug|x86.Build.0 = Debug|Any CPU
+		{1FE04EDC-FF11-4545-8826-2717B3E523C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1FE04EDC-FF11-4545-8826-2717B3E523C5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1FE04EDC-FF11-4545-8826-2717B3E523C5}.Release|x64.ActiveCfg = Release|Any CPU
+		{1FE04EDC-FF11-4545-8826-2717B3E523C5}.Release|x64.Build.0 = Release|Any CPU
+		{1FE04EDC-FF11-4545-8826-2717B3E523C5}.Release|x86.ActiveCfg = Release|Any CPU
+		{1FE04EDC-FF11-4545-8826-2717B3E523C5}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
