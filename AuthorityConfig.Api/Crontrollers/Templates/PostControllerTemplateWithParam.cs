@@ -1,4 +1,5 @@
-﻿using AuthorityConfig.Domain.Response;
+﻿using AuthorityConfig.Domain.Param;
+using AuthorityConfig.Domain.Response;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Threading;
@@ -8,7 +9,7 @@ namespace AuthorityConfig.Api.Crontrollers.Templates
 {
     [ApiController]
     [Route("api/[controller]")]
-    public class PostControllerTemplateWithParam<P>
+    public class PostControllerTemplateWithParam<P> where P : BaseParam
     {
         private readonly Func<P, CancellationToken, Task> _func;
 
@@ -22,6 +23,7 @@ namespace AuthorityConfig.Api.Crontrollers.Templates
         {
             try
             {
+                param.Valid();
                 using var cts = new CancellationTokenSource();
                 await _func(param, cts.Token);
                 return new OkObjectResult(new AuthorityConfigResponse());

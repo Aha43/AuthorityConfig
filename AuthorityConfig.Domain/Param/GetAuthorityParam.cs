@@ -1,13 +1,19 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using AuthorityConfig.Domain.Exceptions;
 
 namespace AuthorityConfig.Domain.Param
 {
-    public class GetAuthorityParam
+    public class GetAuthorityParam : BaseParam
     {
         public string Authority { get; set; }
+
+        public override void Valid()
+        {
+            if (string.IsNullOrEmpty(Authority))
+            {
+                throw new InvalidParamException("Missing: " + nameof(Authority));
+            }
+        }
+
     }
+
 }

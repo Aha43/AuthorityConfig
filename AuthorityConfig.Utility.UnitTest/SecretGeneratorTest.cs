@@ -3,7 +3,7 @@ using Xunit;
 
 namespace AuthorityConfig.Utility.UnitTest
 {
-    public class UnitTest1
+    public class SecretGeneratorTest
     {
         [Fact]
         public void Test1()
