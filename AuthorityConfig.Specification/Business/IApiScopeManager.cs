@@ -9,6 +9,7 @@ namespace AuthorityConfig.Specification.Business
     public interface IApiScopeManager
     {
         Task<IEnumerable<ApiScope>> GetApiScopesAsync(AuthorityParam param, CancellationToken cancellationToken);
-        Task AddApiScopeAsync(AddApiParam param, CancellationToken cancellationToken);
+        Task<ApiScope> GetApiScopeAsync(GatApiScopeParam param, CancellationToken cancellationToken);
+        Task SetApiScopeAsync(SetApiParam param, CancellationToken cancellationToken);
     }
 }
