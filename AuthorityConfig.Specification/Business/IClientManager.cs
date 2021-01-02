@@ -10,6 +10,6 @@ namespace AuthorityConfig.Specification.Business
     public interface IClientManager
     {
         Task<IEnumerable<Client>> GetClientsAsync(AuthorityParam param, CancellationToken cancellationToken);
-        Task<ClientResponse> SetClientAsync(SetClientParam param, CancellationToken cancellationToken);
+        Task<SetClientResponse> SetClientAsync(SetClientParam param, CancellationToken cancellationToken);
     }
 }

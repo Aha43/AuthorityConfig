@@ -5,6 +5,7 @@ namespace AuthorityConfig.Domain.Param
 {
     public class SetApiParam : BaseParam
     {
+        public bool DryRun { get; set; }
         public string Authority { get; set; }
         public string Name { get; set; }
         public string DisplayName { get; set; }

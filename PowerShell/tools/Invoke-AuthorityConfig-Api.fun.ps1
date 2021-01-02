@@ -8,6 +8,9 @@ function Invoke-AuthorityConfig-Api(
         $response = $null
         if ($param) {
             $json = $param | ConvertTo-Json
+
+            $json
+
             $response = (Invoke-RestMethod -Method 'Post' -Uri $uri -Body $json -ContentType "application/json")
         } else {
             $response = (Invoke-RestMethod -Method 'Post' -Uri $uri)

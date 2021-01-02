@@ -2,10 +2,10 @@
 
 namespace AuthorityConfig.Domain.Response
 {
-    public class ClientResponse
+    public class SetApiScopeResponse
     {
         public bool Created { get; set; }
-        public string Secret { get; set; }
-        public Client Client { get; set; }
+        public bool DryRun { get; set; }
+        public ApiScope ApiScope { get; set; }
     }
 }
